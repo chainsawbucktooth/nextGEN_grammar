@@ -111,8 +111,27 @@ td {
 
 .loading-container {
   text-align: center;
+  overflow: hidden;
   // opacity: 0.1
 }
+
+// .image-container {
+//   padding: 80px;
+//   background-color: blue;
+//   position: relative;
+//   left: 0;
+//   // position: absolute;
+//   // width: 200px;
+// }
+//
+// .loading-gif {
+//   object-fit: cover;
+//   // left: -50px;
+//   // top: -50px;
+//   width: 200px;
+//   height: 200px;
+//   position: absolute;
+// }
 
 .hidden {
   display: none;

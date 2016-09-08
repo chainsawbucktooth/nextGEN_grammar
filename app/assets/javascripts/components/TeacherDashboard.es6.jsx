@@ -65,7 +65,7 @@ class TeacherDashboard extends React.Component {
   }
 
   toggleAddExistingCohortForm() {
-    this.toggleAddCohortOption()
+    // this.toggleAddCohortOption()
     this.setState({
       addExistingCohortFormVisible: !this.state.addExistingCohortFormVisible
     })
