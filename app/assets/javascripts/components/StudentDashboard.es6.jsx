@@ -329,7 +329,7 @@ class StudentDashboard extends React.Component {
                     { this.state.completedAssignments.length < 1 ?
                       <p> You have no completed assignments. </p>
                       :
-                    <table className="table table-hover table-responsive">
+                    <table className="table table-responsive">
                       <thead className="thead-inverse">
                         <tr>
                           <th> Date Assigned </th>

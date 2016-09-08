@@ -45,6 +45,8 @@ class CohortShowAssignment extends React.Component {
 
 
   render() {
+    var linkPartOne = "/units/"
+    var linkPartTwo = "/lessons/"
     var assignment = this.props.data;
     return (
       <tbody>
@@ -64,7 +66,7 @@ class CohortShowAssignment extends React.Component {
       <tr id={assignment.id}>
         <td> {assignment.created_at} </td>
         <td> {assignment.unit_id} </td>
-        <td> {assignment.lesson_id} - {assignment.lesson_name} </td>
+        <td><a href={linkPartOne.concat(assignment.unit_id).concat(linkPartTwo).concat(assignment.id)}>{assignment.lesson_name}</a></td>
         <td ref="dueDate"> {assignment.due_date} </td>
         <td> {assignment.number_of_prompts} </td>
         <td ref="completionNumber"> {assignment.completion_number} </td>
